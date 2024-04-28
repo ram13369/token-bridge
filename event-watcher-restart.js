@@ -1,7 +1,7 @@
 const Web3 = require("web3");
 const ether = require("web3ether.js");
 
-ether();
+
 
 //load env file
 require("dotenv").config();
@@ -24,6 +24,7 @@ const BRIDGE_WALLET_KEY = process.env.BRIDGE_PRIV_KEY;
 
 const CHSD_ABIJSON = require("./ChainstackDollars.json");
 const QCHSD_ABIJSON = require("./DChainstackDollars.json");
+ether();
 
 const handleEthEvent = async (event, provider, contract) => {
   console.log("handleEthEvent");
